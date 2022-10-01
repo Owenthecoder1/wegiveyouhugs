@@ -1,4 +1,3 @@
-alert("updated! id:14")
 var clickHere = document.getElementById("clickHere")
 
 function afterTerms(agreed){
