@@ -1,3 +1,4 @@
+alert("updated! id:1")
 var clickHere = document.getElementById("clickHere")
 var agree = document.getElementById("agree")
 var disagree = document.getElementById("uMeany")
