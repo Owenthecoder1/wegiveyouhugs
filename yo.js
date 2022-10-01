@@ -1,23 +1,27 @@
-alert("updated! id:11")
+alert("updated! id:12")
 var clickHere = document.getElementById("clickHere")
 
 function afterTerms(agreed){
 	var nameCorrect = 0
 	while(nameCorrect == 0){
 		var name = prompt("Please enter your first and last name with proper capitalization")
-		if(name = "Alexander Sutherland"){var nameCorrect = 1}else{alert("Invalid Name")}
+		if(name == "Alexander Sutherland"){var nameCorrect = 1}else{alert("Invalid Name")}
 	}
-	var Verify = prompt("To verify your identity, please answer one question with correct capitalization: On 9-30-2022, in what game did you capture a castle?")
-	if(Verify == "Gloria Victis"){
-		if(agreed == 1){
-			document.body.innerHTML = "Please wait for your letter to arrive!"
+	if(nameCorrect == 1){
+		var Verify = prompt("To verify your identity, please answer one question with correct capitalization: On 9-30-2022, in what game did you capture a castle?")
+		if(Verify == "Gloria Victis"){
+			if(agreed == 1){
+				document.body.innerHTML = "Please wait for your letter to arrive!"
+			}else{
+				document.body.innerHTML = "Since you were very mean and did not agree to our terms and conditions, you are now going to have to go to a <span>separate website</span> if you want to claim your hug!"
+				alert("STAGE ONE CLEAR!")
+			}
 		}else{
-			document.body.innerHTML = "Since you were very mean and did not agree to our terms and conditions, you are now going to have to go to a <span>separate website</span> if you want to claim your hug!"
-			alert("STAGE ONE CLEAR!")
+			alert("Nice try impostor!")
+			document.body.innerHTML = "NO IMPOSTORS ALLOWED"
 		}
 	}else{
-		alert("Nice try impostor!")
-		document.body.innerHTML = "NO IMPOSTORS ALLOWED"
+		afterTerms(agreed)
 	}
 }
 
