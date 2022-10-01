@@ -1,3 +1,4 @@
+alert("updated!")
 var startQuestions = document.getElementById("startQuestions")
 
 function N (){
