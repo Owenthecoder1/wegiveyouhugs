@@ -1,15 +1,17 @@
-alert("updated! id:8")
+alert("updated! id:9")
 var clickHere = document.getElementById("clickHere")
 var agreed = 0
 
 function agreeRun(){
 	agreed = 1
 	document.body.innerHTML = "Hello and welcome to wegiveyouhugs.com! We, as stated in our name, give you hugs! You can claim your one free hug in 4 easy steps! Step 1: Agree to the terms and conditions (<span id='clickHere'>click here</span>)Step 2: Enter your name Step 3: Verify your identity Step 4: Click Claim!"
+	clickHere.addEventListener("click", clickHereRun)
 	alert("Thank you for agreeing to our terms and conditions!")
 }
 function disagreeRun(){
 	agreed = 2
 	document.body.innerHTML = "Hello and welcome to wegiveyouhugs.com! We, as stated in our name, give you hugs! You can claim your one free hug in 4 easy steps! Step 1: Agree to the terms and conditions (<span id='clickHere'>click here</span>)Step 2: Enter your name Step 3: Verify your identity Step 4: Click Claim!"
+	clickHere.addEventListener("click", clickHereRun)
 	prompt("We are sad that you do not think that our terms and conditions are worth agreeing to. Please write your feedback in the box below. :(")
 }
 
