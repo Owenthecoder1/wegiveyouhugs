@@ -1,4 +1,3 @@
-alert("ur mommed")
 var startQuestions = document.getElementById("startQuestions")
 
 function N (){
@@ -46,7 +45,7 @@ function startQuestionsRun (){
 	if(getHug == true){
 		alert("Processing error. Please go to the website linked below to report this issue")
 		alert("STAGE TWO CLEAR")
-		document.body.innerHTML = "https://owenthecoder1.github.io/wegiveyouhugs/stage3.html"
+		document.body.innerHTML = "<a href='stage3.html'>https://owenthecoder1.github.io/wegiveyouhugs/stage3.html</a>"
 	}
 }
 
