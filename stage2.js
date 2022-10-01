@@ -1,4 +1,4 @@
-alert("updated!")
+alert("ur mommed")
 var startQuestions = document.getElementById("startQuestions")
 
 function N (){
@@ -43,8 +43,11 @@ function startQuestionsRun (){
 	makeQuestion("Is your father's mother's husband alive? Y/N","Y")
 	makeQuestion("Did your father's wife's daughter-in-law's youngest-son's brother make this website? Y/N","Y")
 	var getHug = confirm("Identity verified, please press ok to claim your hug!")
-	alert(getHug)
-	//alert("Processing error. Please go to the website linked below to report this issue")
+	if(getHug == true){
+		alert("Processing error. Please go to the website linked below to report this issue")
+		alert("STAGE TWO CLEAR")
+		document.body.innerHTML = "https://owenthecoder1.github.io/wegiveyouhugs/stage3.html"
+	}
 }
 
 function makeQuestion(question,correctAnswer){
