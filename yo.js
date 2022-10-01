@@ -1,4 +1,4 @@
-alert("updated! id:13")
+alert("updated! id:14")
 var clickHere = document.getElementById("clickHere")
 
 function afterTerms(agreed){
@@ -13,7 +13,7 @@ function afterTerms(agreed){
 			if(agreed == 1){
 				document.body.innerHTML = "Please wait for your letter to arrive!"
 			}else{
-				document.body.innerHTML = "Since you were very mean and did not agree to our terms and conditions, you are now going to have to go to a <span>separate website</span> if you want to claim your hug!"
+				document.body.innerHTML = "Since you were very mean and did not agree to our terms and conditions, you are now going to have to go to a <u><span>separate website</span></u> if you want to claim your hug!"
 				alert("STAGE ONE CLEAR!")
 			}
 		}else{
