@@ -1,4 +1,3 @@
-alert("UPDATED! 2")
 var nameVerify = document.getElementById("nameVerify")
 var chitchat = document.getElementById("chitchat")
 
@@ -33,7 +32,7 @@ function talkTime (){
 			document.body.innerHTML = "Please wait for your delivery person to arrive!"
 		}else{
 			alert("WE ARE OUT OF WAYS TO DELIVER YOUR HUG, GOODBYE")
-			document.body.innerHTML = "Out of options. <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><p style = 'color:white'>Right? Email Owen and tell him to give his dad a hug :)!</p>"
+			document.body.innerHTML = "Out of options. <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><p style = 'color:white'>Right? Tell Owen to give his dad a hug :)!</p>"
 		}
 	}
 }
