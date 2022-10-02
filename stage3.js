@@ -1,3 +1,4 @@
+alert("UPDATED! 1")
 var nameVerify = document.getElementById("nameVerify")
 var chitchat = document.getElementById("chitchat")
 
