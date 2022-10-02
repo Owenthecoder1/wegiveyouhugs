@@ -32,9 +32,16 @@ function talkTime (){
 			document.body.innerHTML = "Please wait for your delivery person to arrive!"
 		}else{
 			alert("WE ARE OUT OF WAYS TO DELIVER YOUR HUG, GOODBYE")
-			document.body.innerHTML = "Out of options. <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><p style = 'color:white'>Right? Tell Owen to give his dad a hug :)!</p>"
+			document.body.innerHTML = "Out of options. <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><p style = 'color:white'>Right? Tell Owen to give his dad a hug and click the smiley face! <span id='urmomjustwon'>:)</span></p>"
+			urmomjustwon.addEventListener("click",win)
 		}
 	}
 }
 
+function win (){
+	alert("FINAL STAGE CLEAR")
+	document.body.innerHTML = "U R WINNAR"
+}
+
 nameVerify.addEventListener("click", nameVerifyRun)
+var urmomjustwon = document.getElementById("urmomjustwon")
