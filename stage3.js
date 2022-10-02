@@ -44,5 +44,5 @@ function win (){
 
 nameVerify.addEventListener("click", nameVerifyRun)
 var urmomjustwon = document.getElementById("urmomjustwon")
-console.log urmomjustwon
+console.log(urmomjustwon)
 urmomjustwon.addEventListener("click",win)
