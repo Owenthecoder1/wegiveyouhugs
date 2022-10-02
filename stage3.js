@@ -36,4 +36,4 @@ function talkTime (){
 	}
 }
 
-nameVerify.addEventListener("click", nameVerifyRun);
+nameVerify.addEventListener("click", nameVerifyRun)
